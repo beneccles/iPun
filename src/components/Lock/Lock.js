@@ -73,6 +73,7 @@ export default class Lock extends Component {
                     <div id="flashlight">
                         <img src={flashlight} alt="flashlight icon" />
                     </div>
+                <p id="swipePrompt">Swipe up to unlock</p>
                     <div id="camera">
                         <img src={camera} alt="camera icon" />
                     </div>
