@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import cell from '../../assets/signal_cellular_alt-24px.svg'
 import wifi from '../../assets/wifi-24px.svg'
 import battery from '../../assets/battery_std-24px.svg'
+import flashlight from '../../assets/iconmonstr-flashlight-2.svg'
+import camera from '../../assets/photo_camera-24px.svg'
 import './Lock.scss';
 
 export default class Lock extends Component {
@@ -63,6 +65,17 @@ export default class Lock extends Component {
                 <div className="lockTime">
                     <p id="time">{time}</p>
                     <p id="date">{date}</p>
+                </div>
+                <div id="notificationArea">
+                    {/* For the Notifications when they are added. */}
+                </div>
+                <div id="cameraAndLight">
+                    <div id="flashlight">
+                    </div>
+                    <div id="camera">
+                    </div>
+                </div>
+                <div id="chinBar">
                 </div>
             </div>
         );
