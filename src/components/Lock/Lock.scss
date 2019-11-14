@@ -9,12 +9,13 @@
     .lockTime {
         color: white;
         position: relative;
-        top: 100px;
+        top: 125px;
         font-family: system, -apple-system, BlinkMacSystemFont,
         "Helvetica Neue", "Lucida Grande";
 
         #time {
             font-size: 64px;
+            margin-bottom: 10px;
         }
 
         #date{

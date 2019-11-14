@@ -33,75 +33,11 @@ export default class Lock extends Component {
         let date = ""
 
         // Build the Date to put on the Lockscreen
-        switch (data.getDay()) {
-            case 1:
-                date += "Monday, "
-                break;
-            case 2:
-                date += "Tuesday, "
-                break;
-            case 3:
-                date += "Wednesday, "
-                break;
-            case 4:
-                date += "Thursday, "
-                break;
-            case 5:
-                date += "Friday, "
-                break;
-            case 6:
-                date += "Saturday, "
-                break;
-            case 7:
-                date += "Sunday, "
-                break;
-            default:
-                break;
-        }
-
-        switch (data.getMonth()) {
-            case 0:
-                date += "January "
-                break;
-            case 1:
-                date += "Feburary "
-                break;
-            case 2:
-                date += "March "
-                break;
-            case 3:
-                date += "April "
-                break;
-            case 4:
-                date += "May "
-                break;
-            case 5:
-                date += "June "
-                break;
-            case 6:
-                date += "July "
-                break;
-            case 7:
-                date += "August "
-                break;
-            case 8:
-                date += "September "
-                break;
-            case 9:
-                date += "October "
-                break;
-            case 10:
-                date += "November "
-                break;
-            case 11:
-                date += "December "
-                break;
-            default:
-                break;
-        }
-
+        // Thanks to Intl.DateTimeFormat, we can do this in just 3 lines.
+        date += `${new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(data)}, `
+        date += `${new Intl.DateTimeFormat('en-US', {month: 'long'}).format(data)} `
         date += data.getDate()
-        console.log(time, date)
+  
         this.setState({
             time: time,
             date: date
