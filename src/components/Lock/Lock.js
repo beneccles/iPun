@@ -55,11 +55,11 @@ export default class Lock extends Component {
         return (
             <div className="Lock">
                 <div id="notchArea">
-                    <p>E-Mobile</p>
+                    <p id="carrier">E-Mobile</p>
                     <div id="status">
-                        <img src={cell} alt="Cell status" />
-                        <img src={wifi} alt="wifi status" />
-                        <img src={battery} alt="Battery status" />
+                        <img id="cell" src={cell} alt="Cell status" />
+                        <img id="wifi" src={wifi} alt="wifi status" />
+                        <img id="battery" src={battery} alt="Battery status" />
                     </div>
                 </div>
                 <div className="lockTime">

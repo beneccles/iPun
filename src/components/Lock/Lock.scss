@@ -15,17 +15,43 @@
     #notchArea{
         color: white;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
         position: relative;
-        bottom: 75px;
+        width: 100%;
+        bottom: 55px;
+        #carrier{
+            margin-left: 15px;
+        }
+
+        #status {
+            margin-right: 10px;
+            width: 30%;
+            
+            #wifi{
+                height: 24px;
+                width: 24px;
+                margin-right: 5px;
+            }
+
+            #cell{
+                height: 24px;
+                width: 24px;
+                margin-right: 5px;
+            }
+            #battery{
+                transform: rotate(90deg);
+                height: 24px;
+                width: 24px;
+            }
+        }
     }
 
     .lockTime {
         color: white;
         position: relative;
-        bottom:170px;
+        bottom:100px;
         font-family: system, -apple-system, BlinkMacSystemFont,
         "Helvetica Neue", "Lucida Grande";
 
