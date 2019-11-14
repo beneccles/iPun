@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import cell from '../../assets/signal_cellular_alt-24px.svg'
+import wifi from '../../assets/wifi-24px.svg'
+import battery from '../../assets/battery_std-24px.svg'
 import './Lock.scss';
 
 export default class Lock extends Component {
@@ -49,6 +52,14 @@ export default class Lock extends Component {
 
         return (
             <div className="Lock">
+                <div id="notchArea">
+                    <p>E-Mobile</p>
+                    <div id="status">
+                        <img src={cell} alt="Cell status" />
+                        <img src={wifi} alt="wifi status" />
+                        <img src={battery} alt="Battery status" />
+                    </div>
+                </div>
                 <div className="lockTime">
                     <p id="time">{time}</p>
                     <p id="date">{date}</p>
