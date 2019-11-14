@@ -25,8 +25,8 @@ export default class Lock extends Component {
 
         // If we are in the first 9 minutes of the hour, add a 0 in front of the value,
         // so that the time shows 0# minutes.
+        console.log(data.getDay())
         if (min < 10) {
-            console.log(min)
             min = "0" + min.toString()
         }
         let time = `${data.getHours()}:${min}`
@@ -34,25 +34,25 @@ export default class Lock extends Component {
 
         // Build the Date to put on the Lockscreen
         switch (data.getDay()) {
-            case 0:
+            case 1:
                 date += "Monday, "
                 break;
-            case 1:
+            case 2:
                 date += "Tuesday, "
                 break;
-            case 2:
+            case 3:
                 date += "Wednesday, "
                 break;
-            case 3:
+            case 4:
                 date += "Thursday, "
                 break;
-            case 4:
+            case 5:
                 date += "Friday, "
                 break;
-            case 5:
+            case 6:
                 date += "Saturday, "
                 break;
-            case 6:
+            case 7:
                 date += "Sunday, "
                 break;
             default:
@@ -100,7 +100,7 @@ export default class Lock extends Component {
                 break;
         }
 
-        date += data.getDay()
+        date += data.getDate()
         console.log(time, date)
         this.setState({
             time: time,
@@ -114,7 +114,8 @@ export default class Lock extends Component {
         return (
             <div className="Lock">
                 <div className="lockTime">
-                    <h1>{time}</h1>
+                    <p id="time">{time}</p>
+                    <p id="date">{date}</p>
                 </div>
             </div>
         );

@@ -8,11 +8,17 @@
 
     .lockTime {
         color: white;
+        position: relative;
+        top: 100px;
+        font-family: system, -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", "Lucida Grande";
 
-        h1 {
+        #time {
             font-size: 64px;
-            font-family: system, -apple-system, BlinkMacSystemFont,
-      "Helvetica Neue", "Lucida Grande";
+        }
+
+        #date{
+            font-size: 18px;
         }
     }
 }
