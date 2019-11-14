@@ -5,4 +5,14 @@
     border-radius: 30px;
     background-image: url('../../assets/iphone_background.png');
     background-size: contain;
+
+    .lockTime {
+        color: white;
+
+        h1 {
+            font-size: 64px;
+            font-family: system, -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", "Lucida Grande";
+        }
+    }
 }

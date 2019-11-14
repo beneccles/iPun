@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './Lock.scss';
 
-export default class Lock extends Component{
+export default class Lock extends Component {
     // This is the Lockscreen Component of the iPun. In web terms,
     // this is going to be our landing page for the app.
     // Requirements for this component:
@@ -21,11 +21,19 @@ export default class Lock extends Component{
 
     componentDidMount() {
         let data = new Date();
-        let time = `${data.getHours()}:${data.getMinutes()}`
+        let min = data.getMinutes()
+
+        // If we are in the first 9 minutes of the hour, add a 0 in front of the value,
+        // so that the time shows 0# minutes.
+        if (min < 10) {
+            console.log(min)
+            min = "0" + min.toString()
+        }
+        let time = `${data.getHours()}:${min}`
         let date = ""
 
         // Build the Date to put on the Lockscreen
-        switch(data.getDay()){
+        switch (data.getDay()) {
             case 0:
                 date += "Monday, "
                 break;
@@ -51,7 +59,7 @@ export default class Lock extends Component{
                 break;
         }
 
-        switch(data.getMonth()){
+        switch (data.getMonth()) {
             case 0:
                 date += "January "
                 break;
@@ -77,7 +85,7 @@ export default class Lock extends Component{
                 date += "August "
                 break;
             case 8:
-                date += "September " 
+                date += "September "
                 break;
             case 9:
                 date += "October "
@@ -100,15 +108,17 @@ export default class Lock extends Component{
         })
     }
 
-render() {
-    const {time , date} = this.state;
+    render() {
+        const { time, date } = this.state;
 
-    return (
-        <div className="Lock">
-            
-        </div>
-    );
-}
+        return (
+            <div className="Lock">
+                <div className="lockTime">
+                    <h1>{time}</h1>
+                </div>
+            </div>
+        );
+    }
 }
 
 
