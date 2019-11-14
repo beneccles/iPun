@@ -71,8 +71,10 @@ export default class Lock extends Component {
                 </div>
                 <div id="cameraAndLight">
                     <div id="flashlight">
+                        <img src={flashlight} alt="flashlight icon" />
                     </div>
                     <div id="camera">
+                        <img src={camera} alt="camera icon" />
                     </div>
                 </div>
                 <div id="chinBar">
