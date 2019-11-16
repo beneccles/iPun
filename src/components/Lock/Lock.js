@@ -79,7 +79,7 @@ export default class Lock extends Component {
                     </div>
                 </div>
                 <Swipeable onSwipeUp={() => {
-
+                    this.props.history.push("/Home")
                 }}>
                 <div id="chinBar">
                 </div>

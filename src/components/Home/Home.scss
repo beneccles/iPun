@@ -1,4 +1,13 @@
 .Home {
     height: 812px;
     width: 375px;
+    border-radius: 30px;
+    background-image: url('../../assets/iphone_background.png');
+    background-size: contain;
+    // display: flex;
+	// flex-direction: column;
+	// flex-wrap: nowrap;
+	// justify-content: space-around;
+	// align-items: center;
+	// align-content: stretch;
 }
