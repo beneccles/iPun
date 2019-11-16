@@ -4,10 +4,10 @@
     border-radius: 30px;
     background-image: url('../../assets/iphone_background.png');
     background-size: contain;
-    // display: flex;
-	// flex-direction: column;
-	// flex-wrap: nowrap;
-	// justify-content: space-around;
-	// align-items: center;
-	// align-content: stretch;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
 }

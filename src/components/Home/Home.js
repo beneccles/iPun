@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import Dock from '../Dock/Dock'
 import './Home.scss';
 
 export default function Home() {
     return (
         <div className="Home">
-            <span>Welcome Home!</span>
+            <div id="appHome">
+
+            </div>
+            <Dock />
         </div>
     )
 }
