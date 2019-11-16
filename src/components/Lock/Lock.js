@@ -4,6 +4,7 @@ import wifi from '../../assets/wifi-24px.svg'
 import battery from '../../assets/battery_std-24px.svg'
 import flashlight from '../../assets/iconmonstr-flashlight-2.svg'
 import camera from '../../assets/photo_camera-24px.svg'
+import {Swipeable} from 'react-touch';
 import './Lock.scss';
 
 export default class Lock extends Component {
@@ -30,7 +31,6 @@ export default class Lock extends Component {
 
         // If we are in the first 9 minutes of the hour, add a 0 in front of the value,
         // so that the time shows 0# minutes.
-        console.log(data.getDay())
         if (min < 10) {
             min = "0" + min.toString()
         }
@@ -78,8 +78,13 @@ export default class Lock extends Component {
                         <img src={camera} alt="camera icon" />
                     </div>
                 </div>
+                <Swipeable onSwipeUp={() => {
+
+                }}>
                 <div id="chinBar">
                 </div>
+                </Swipeable>
+
             </div>
         );
     }
