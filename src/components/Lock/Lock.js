@@ -79,7 +79,12 @@ export default class Lock extends Component {
                     </div>
                 </div>
                 <Swipeable onSwipeUp={() => {
-                    this.props.history.push("/Home")
+                    const element = document.querySelector('.Lock')
+                    element.classList.add('animated', 'slideOutUp')
+                    // Let the swipeUp animation finish before moving to the Home screen.
+                    setInterval(() => {
+                        this.props.history.push("/Home")
+                    }, 1000)
                 }}>
                 <div id="chinBar">
                 </div>
