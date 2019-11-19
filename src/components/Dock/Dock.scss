@@ -34,7 +34,6 @@
             #radialDial {
                 width: 100%;
                 height: 10px;
-                background-color: green;
                 transform: rotate(-45deg);
                 display: flex;
 	            flex-direction: row;
@@ -46,22 +45,22 @@
 
                 #upperRadial {
                     position: relative;
-                    left: 6px;
+                    left: 7px;
                     width: 0;
                     height: 0;
                     border-style: solid;
-                    border-width: 0 4px 30px 4px;
+                    border-width: 0 5px 24px 5px;
                     border-color: transparent transparent white transparent;
                     transform: rotate(-90deg);
                 }
 
                 #lowerRadial {
                     position: relative;
-                    right: 6px;
+                    right: 7px;
                     width: 0;
                     height: 0;
                     border-style: solid;
-                    border-width: 0 4px 30px 4px;
+                    border-width: 0 5px 24px 5px;
                     border-color: transparent transparent red transparent;
                     transform: rotate(90deg);
                 }
