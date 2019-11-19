@@ -14,10 +14,8 @@ export default function Dock() {
                 <div id="browserCircle">
                     <div id="radialDial">
                         <div id="upperRadial">
-                            {/* <div id="triangle-left-top">
-                            </div> */}
-                            <div id="triange-right-top">
-                            </div>
+                        </div>
+                        <div id="lowerRadial">
                         </div>
                     </div>
                 </div>
