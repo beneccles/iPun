@@ -1,7 +1,7 @@
 .Dock {
     width: 90%;
     height: 10%;
-    background-color: white;
+    background-color: gray;
     border-radius: 20px;
     margin-bottom: 15px;
     display: flex;
@@ -17,4 +17,18 @@
         align-items: center;
         background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,187,44,1) 0%, rgba(99,248,125,1) 89.7% );
     }
+
+    #browser {
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #browserCircle {
+            width: 88%;
+            height: 88%;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(26,191,251,1) 0%, rgba(27,127,243,1) 90% );
+            border-radius: 100%;
+        }
+    }
+
 }
