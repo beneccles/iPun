@@ -7,7 +7,7 @@ export default function Dock() {
     return (
         <div className="Dock">
             <Link id="Phone" to="/Phone" className="appLink">
-                <img src={phoneImage} alt="Phone Image" />
+                <img src={phoneImage} alt="Phone Image"/>
             </Link>
             <div className="appLink">
                 
