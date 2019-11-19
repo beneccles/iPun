@@ -12,6 +12,14 @@ export default function Dock() {
             <Link id="browser" className="appLink">
                 {/* Thus begins the chaos of me trying to recreate the safari icon with CSS */}
                 <div id="browserCircle">
+                    <div id="radialDial">
+                        <div id="upperRadial">
+                            {/* <div id="triangle-left-top">
+                            </div> */}
+                            <div id="triange-right-top">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Link>
             <Link className="appLink">
