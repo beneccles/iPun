@@ -2,6 +2,7 @@ import React from 'react';
 import star from '../../assets/iconmonstr-star-3.svg'
 import recent from '../../assets/iconmonstr-clock-thin.svg'
 import voicemail from '../../assets/voicemail-24px.svg'
+import contact from '../../assets/supervised_user_circle-24px.svg'
 import "./Phone.scss"
 
 export default function Phone() {
@@ -17,6 +18,10 @@ export default function Phone() {
                     <img src={recent} alt="Recent" />
                 </div>
                 <div className="phoneLink">
+                    <img src={contact} alt="Contact" />
+                </div>
+                <div className="phoneLink">
+                    
                 </div>
                 <div className="phoneLink">
                     <img src={voicemail} alt="Voicemail" />
