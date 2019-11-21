@@ -18,6 +18,13 @@
         background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,187,44,1) 0%, rgba(99,248,125,1) 89.7% );
     }
 
+    #Message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,187,44,1) 0%, rgba(99,248,125,1) 89.7% );
+    }
+
     #browser {
         background-color: #FFFFFF;
         display: flex;
