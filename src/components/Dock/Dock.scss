@@ -25,6 +25,18 @@
         background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,187,44,1) 0%, rgba(99,248,125,1) 89.7% );
     }
 
+    #Music {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: snow;
+
+        #noteGrade {
+            background: rgb(136,103,255);
+            background: linear-gradient(28deg, rgba(136,103,255,1) 0%, rgba(245,94,124,1) 50%, rgba(76,162,247,1) 100%);
+        }
+    }
+
     #browser {
         background-color: #FFFFFF;
         display: flex;

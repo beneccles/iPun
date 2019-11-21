@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import phoneImage from '../../assets/iconmonstr-phone-1.svg'
 import message from '../../assets/iconmonstr-speech-bubble-1.svg'
+import note from '../../assets/music_note-24px.svg'
 import './Dock.scss';
 
 export default function Dock() {
@@ -24,8 +25,8 @@ export default function Dock() {
             <Link id="Message" className="appLink">
                 <img src={message} alt="Text Message" />
             </Link>
-            <Link className="appLink">
-                
+            <Link id="Music" className="appLink">
+                <img src={note} alt="Music" />
             </Link>
         </div>
     )
