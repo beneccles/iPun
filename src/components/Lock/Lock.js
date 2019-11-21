@@ -83,7 +83,7 @@ export default class Lock extends Component {
                     element.classList.add('animated', 'slideOutUp')
                     // Let the swipeUp animation finish before moving to the Home screen.
                     setInterval(() => {
-                        this.props.history.push("/Home")
+                        this.props.history.push("/home")
                     }, 1000)
                 }}>
                 <div id="chinBar">

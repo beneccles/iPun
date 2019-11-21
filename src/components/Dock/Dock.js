@@ -9,7 +9,7 @@ export default function Dock() {
     return (
         <div className="Dock">
             <Link id="Phone" to="/phone" className="appLink">
-                <img src={phoneImage} alt="Phone Image"/>
+                <img src={phoneImage} alt="Phone App"/>
             </Link>
             <Link id="browser" className="appLink">
                 {/* Thus begins the chaos of me trying to recreate the safari icon with CSS */}
