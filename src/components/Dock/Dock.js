@@ -6,7 +6,7 @@ import './Dock.scss';
 export default function Dock() {
     return (
         <div className="Dock">
-            <Link id="Phone" to="/Phone" className="appLink">
+            <Link id="Phone" to="/phone" className="appLink">
                 <img src={phoneImage} alt="Phone Image"/>
             </Link>
             <Link id="browser" className="appLink">
