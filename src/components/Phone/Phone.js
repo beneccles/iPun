@@ -4,7 +4,6 @@ import star from '../../assets/iconmonstr-star-3.svg'
 import recent from '../../assets/iconmonstr-clock-thin.svg'
 import voicemail from '../../assets/voicemail-24px.svg'
 import contact from '../../assets/supervised_user_circle-24px.svg'
-import routes from './routes'
 import "./Phone.scss"
 
 export default function Phone() {
@@ -14,7 +13,7 @@ export default function Phone() {
     return (
         <div className="Phone">
             <div id="phone-home">
-                {routes}
+                {/* {routes} */}
             </div>
             <div id="phone-dock">
                 <Link to="/favorites" className="phoneLink">

@@ -1,4 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import star from '../../../assets/iconmonstr-star-3.svg'
+import recent from '../../../assets/iconmonstr-clock-thin.svg'
+import voicemail from '../../../assets/voicemail-24px.svg'
+import contact from '../../../assets/supervised_user_circle-24px.svg'
 import "./Keypad.scss";
 import circle from '../../../assets/iconmonstr-circle-1.svg'
 
@@ -22,6 +27,23 @@ export default function Keypad() {
                 <img src={circle} alt="keypadNum"/>
                 <img src={circle} alt="keypadNum"/>
             </div>
+            <div id="phone-dock">
+                <Link to="/favorites" className="phoneLink">
+                    <img src={star} alt="Favorites" />
+                </Link>
+                <Link to="/recents" className="phoneLink">
+                    <img src={recent} alt="Recent" />
+                </Link>
+                <Link to="/contacts" className="phoneLink">
+                    <img src={contact} alt="Contact" />
+                </Link>
+                <Link to="/keypad" className="phoneLink">
+                    <p>Keypad</p>
+                </Link>
+                <Link to="/voicemail" className="phoneLink">
+                    <img src={voicemail} alt="Voicemail" />
+                </Link>
+                </div>
         </div>
     )
 }
