@@ -12,6 +12,7 @@ export default function Keypad() {
         <div className="Keypad">
             <div id="number-output">
             </div>
+            <div>
             <div id="first-row">
                 <img src={circle} alt="keypadNum"/>
                 <img src={circle} alt="keypadNum"/>
@@ -27,7 +28,8 @@ export default function Keypad() {
                 <img src={circle} alt="keypadNum"/>
                 <img src={circle} alt="keypadNum"/>
             </div>
-            <div id="phone-dock">
+            </div>
+            <div id="phone-dock" className="keypad-dock">
                 <Link to="/favorites" className="phoneLink">
                     <img src={star} alt="Favorites" />
                 </Link>
