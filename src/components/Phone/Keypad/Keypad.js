@@ -12,22 +12,40 @@ export default function Keypad() {
         <div className="Keypad">
             <div id="number-output">
             </div>
-            <div>
-            <div id="first-row">
-                <img src={circle} alt="keypadNum"/>
-                <img src={circle} alt="keypadNum"/>
-                <img src={circle} alt="keypadNum"/>
-            </div>
-            <div id="second-row">
-                <img src={circle} alt="keypadNum"/>
-                <img src={circle} alt="keypadNum"/>
-                <img src={circle} alt="keypadNum"/>
-            </div>
-            <div id="third-row">
-                <img src={circle} alt="keypadNum"/>
-                <img src={circle} alt="keypadNum"/>
-                <img src={circle} alt="keypadNum"/>
-            </div>
+            <div id="keypad-buttons">
+                <div id="first-row">
+                    <div className="keypad-button">
+
+                    </div>
+                    <div className="keypad-button">
+                        
+                    </div>
+                    <div className="keypad-button">
+                        
+                    </div>
+                </div>
+                <div id="second-row">
+                    <div className="keypad-button">
+                        
+                    </div>
+                    <div className="keypad-button">
+                        
+                    </div>
+                    <div className="keypad-button">
+                        
+                    </div>
+                </div>
+                <div id="third-row">
+                    <div className="keypad-button">
+                        
+                    </div>
+                    <div className="keypad-button">
+                            
+                    </div>
+                    <div className="keypad-button">
+                            
+                    </div>
+                </div>
             </div>
             <div id="phone-dock" className="keypad-dock">
                 <Link to="/favorites" className="phoneLink">
@@ -40,7 +58,23 @@ export default function Keypad() {
                     <img src={contact} alt="Contact" />
                 </Link>
                 <Link to="/keypad" className="phoneLink">
-                    <p>Keypad</p>
+                <div>
+                    <div id="first-row">
+                        <img src={circle} alt="keypadNum"/>
+                        <img src={circle} alt="keypadNum"/>
+                        <img src={circle} alt="keypadNum"/>
+                    </div>
+                    <div id="second-row">
+                        <img src={circle} alt="keypadNum"/>
+                        <img src={circle} alt="keypadNum"/>
+                        <img src={circle} alt="keypadNum"/>
+                    </div>
+                    <div id="third-row">
+                        <img src={circle} alt="keypadNum"/>
+                        <img src={circle} alt="keypadNum"/>
+                        <img src={circle} alt="keypadNum"/>
+                    </div>
+            </div>
                 </Link>
                 <Link to="/voicemail" className="phoneLink">
                     <img src={voicemail} alt="Voicemail" />
