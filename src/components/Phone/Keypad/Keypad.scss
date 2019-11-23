@@ -88,4 +88,34 @@
     .second-column {
         margin-right: 20px;
     }
+
+    #first-row-icon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        margin-bottom: 3px;
+    }
+
+    #second-row-icon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        margin-bottom: 3px;
+    }
+
+    #third-row-icon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        margin-bottom: 3px;
+    }
 }

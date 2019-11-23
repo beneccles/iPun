@@ -78,17 +78,17 @@ export default function Keypad() {
                 </Link>
                 <Link to="/keypad" className="phoneLink phone-dock-pair">
                 <div>
-                    <div id="first-row">
+                    <div id="first-row-icon">
                         <img src={circle} alt="keypadNum"/>
                         <img src={circle} alt="keypadNum"/>
                         <img src={circle} alt="keypadNum"/>
                     </div>
-                    <div id="second-row">
+                    <div id="second-row-icon">
                         <img src={circle} alt="keypadNum"/>
                         <img src={circle} alt="keypadNum"/>
                         <img src={circle} alt="keypadNum"/>
                     </div>
-                    <div id="third-row">
+                    <div id="third-row-icon">
                         <img src={circle} alt="keypadNum"/>
                         <img src={circle} alt="keypadNum"/>
                         <img src={circle} alt="keypadNum"/>
