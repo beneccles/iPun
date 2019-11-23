@@ -21,7 +21,8 @@
 	        flex-wrap: nowrap;
 	        justify-content: center;
 	        align-items: center;
-	        align-content: stretch;
+            align-content: stretch;
+            margin-bottom: 10px;
         }
 
         #second-row {
@@ -30,7 +31,8 @@
 	        flex-wrap: nowrap;
 	        justify-content: center;
 	        align-items: center;
-	        align-content: stretch;
+            align-content: stretch;
+            margin-bottom: 10px;
         }
 
         #third-row {
@@ -39,7 +41,8 @@
 	        flex-wrap: nowrap;
 	        justify-content: center;
 	        align-items: center;
-	        align-content: stretch;
+            align-content: stretch;
+            margin-bottom: 10px;
         }
 
         #fourth-row {
@@ -48,7 +51,8 @@
 	        flex-wrap: nowrap;
 	        justify-content: center;
 	        align-items: center;
-	        align-content: stretch;
+            align-content: stretch;
+            margin-bottom: 10px;
         }
 
         #fifth-row {
@@ -62,9 +66,26 @@
     }
 
     .keypad-button {
-        height: 64px;
-        width: 64px;
-        border-radius: 30px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
         background-color: snow;
+    }
+
+    .phone-dock-pair {
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: stretch;
+    }
+
+    .first-column {
+        margin-right: 20px;
+    }
+
+    .second-column {
+        margin-right: 20px;
     }
 }

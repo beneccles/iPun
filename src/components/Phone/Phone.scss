@@ -12,6 +12,8 @@
     }
     #phone-dock{
         background-color:snow;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
         width: 100%;
         height: 10%;
         display: flex;
@@ -26,6 +28,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            p {
+                font-size: 10px;
+            }
         }
     }
 }

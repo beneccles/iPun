@@ -14,10 +14,10 @@ export default function Keypad() {
             </div>
             <div id="keypad-buttons">
                 <div id="first-row">
-                    <div className="keypad-button">
+                    <div className="keypad-button first-column">
 
                     </div>
-                    <div className="keypad-button">
+                    <div className="keypad-button second-column">
                         
                     </div>
                     <div className="keypad-button">
@@ -25,10 +25,10 @@ export default function Keypad() {
                     </div>
                 </div>
                 <div id="second-row">
-                    <div className="keypad-button">
+                    <div className="keypad-button first-column">
                         
                     </div>
-                    <div className="keypad-button">
+                    <div className="keypad-button second-column">
                         
                     </div>
                     <div className="keypad-button">
@@ -36,10 +36,10 @@ export default function Keypad() {
                     </div>
                 </div>
                 <div id="third-row">
-                    <div className="keypad-button">
+                    <div className="keypad-button first-column">
                         
                     </div>
-                    <div className="keypad-button">
+                    <div className="keypad-button second-column">
                             
                     </div>
                     <div className="keypad-button">
@@ -47,10 +47,10 @@ export default function Keypad() {
                     </div>
                 </div>
                 <div id="fourth-row">
-                    <div className="keypad-button">
+                    <div className="keypad-button first-column">
                         
                     </div>
-                    <div className="keypad-button">
+                    <div className="keypad-button second-column">
                                 
                     </div>
                     <div className="keypad-button">
@@ -59,21 +59,24 @@ export default function Keypad() {
                 </div>
                 <div id="fifth-row">
                     <div className="keypad-button">
-                        
+
                     </div>
                 </div>
             </div>
             <div id="phone-dock" className="keypad-dock">
-                <Link to="/favorites" className="phoneLink">
+                <Link to="/favorites" className="phoneLink phone-dock-pair">
                     <img src={star} alt="Favorites" />
+                    <p>Favorites</p>
                 </Link>
-                <Link to="/recents" className="phoneLink">
+                <Link to="/recents" className="phoneLink phone-dock-pair">
                     <img src={recent} alt="Recent" />
+                    <p>Recents</p>
                 </Link>
-                <Link to="/contacts" className="phoneLink">
+                <Link to="/contacts" className="phoneLink phone-dock-pair">
                     <img src={contact} alt="Contact" />
+                    <p>Contacts</p>
                 </Link>
-                <Link to="/keypad" className="phoneLink">
+                <Link to="/keypad" className="phoneLink phone-dock-pair">
                 <div>
                     <div id="first-row">
                         <img src={circle} alt="keypadNum"/>
@@ -91,9 +94,11 @@ export default function Keypad() {
                         <img src={circle} alt="keypadNum"/>
                     </div>
             </div>
+            <p>Keypad</p>
                 </Link>
-                <Link to="/voicemail" className="phoneLink">
+                <Link to="/voicemail" className="phoneLink phone-dock-pair">
                     <img src={voicemail} alt="Voicemail" />
+                    <p>Voicemail</p>
                 </Link>
                 </div>
         </div>
