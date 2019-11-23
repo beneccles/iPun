@@ -13,12 +13,13 @@
     
     #keypad-buttons {
         width: 100%;
-        
+ 
+
         #first-row {
             display: flex;
 	        flex-direction: row;
 	        flex-wrap: nowrap;
-	        justify-content: space-around;
+	        justify-content: center;
 	        align-items: center;
 	        align-content: stretch;
         }
@@ -27,7 +28,7 @@
             display: flex;
 	        flex-direction: row;
 	        flex-wrap: nowrap;
-	        justify-content: space-around;
+	        justify-content: center;
 	        align-items: center;
 	        align-content: stretch;
         }
@@ -36,7 +37,25 @@
             display: flex;
 	        flex-direction: row;
 	        flex-wrap: nowrap;
-	        justify-content: space-around;
+	        justify-content: center;
+	        align-items: center;
+	        align-content: stretch;
+        }
+
+        #fourth-row {
+            display: flex;
+	        flex-direction: row;
+	        flex-wrap: nowrap;
+	        justify-content: center;
+	        align-items: center;
+	        align-content: stretch;
+        }
+
+        #fifth-row {
+            display: flex;
+	        flex-direction: row;
+	        flex-wrap: nowrap;
+	        justify-content: center;
 	        align-items: center;
 	        align-content: stretch;
         }
