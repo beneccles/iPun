@@ -4,6 +4,7 @@ import star from '../../../assets/iconmonstr-star-3.svg'
 import recent from '../../../assets/iconmonstr-clock-thin.svg'
 import voicemail from '../../../assets/voicemail-24px.svg'
 import contact from '../../../assets/supervised_user_circle-24px.svg'
+import phoneicon from '../../../assets/iconmonstr-phone-1.svg'
 import "./Keypad.scss";
 import circle from '../../../assets/iconmonstr-circle-1.svg'
 
@@ -58,8 +59,8 @@ export default function Keypad() {
                     </div>
                 </div>
                 <div id="fifth-row">
-                    <div className="keypad-button">
-
+                    <div className="keypad-button" id="commit-call">
+                        <img src={phoneicon} alt="Phone Icon" />
                     </div>
                 </div>
             </div>
