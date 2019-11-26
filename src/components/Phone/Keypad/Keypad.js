@@ -114,14 +114,14 @@ export default function Keypad() {
                     <p>Favorites</p>
                 </Link>
                 <Link to="/recents" className="phoneLink phone-dock-pair">
-                    <img src={recent} alt="Recent" />
+                    <img src={recent} alt="Recent" id="phone-recent"/>
                     <p>Recents</p>
                 </Link>
                 <Link to="/contacts" className="phoneLink phone-dock-pair">
                     <img src={contact} alt="Contact" />
                     <p>Contacts</p>
                 </Link>
-                <Link to="/keypad" className="phoneLink phone-dock-pair">
+                <Link to="/keypad" className="phoneLink phone-dock-pair" id="keypad-icon">
                 <div>
                     <div id="first-row-icon">
                         <img src={circle} alt="keypadNum"/>
