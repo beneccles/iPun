@@ -9,6 +9,8 @@ import "./Keypad.scss"
 export default function Keypad() {
 
     const [number, setNumber] = useState("");
+    const [rawNumber, setRaw] = useState("");
+    const [E164, setE164] = useState("+")
 
     // Catch for delay on setOutgoingNumber event.
     // UseEffect makes sure that the component updates after every button press,
@@ -20,19 +22,27 @@ export default function Keypad() {
         }
 
         if (number.length === 7) {
-            let newNum = number;
-            
-            setNumber(number + "-")
+            let areaCode = `(${number.substring(0, 3)}) ${number.substring(4, 7)}-`
+            setNumber(areaCode)
         }
 
         let target =  document.getElementById("number-output")
         target.innerHTML = number;
+
+        // If the user enters 11 digits, remove US phone formatting to prep for internal phone format.
+        if (rawNumber.length > 10 && number[0] === "(") {
+            setNumber(rawNumber)
+            target.innerHTML = number
+        }
     })
     const setOutgoingNumber =  (num) => {
         let target =  document.getElementById("number-output")
         // Set the number into the call stack.
         
         setNumber(number + num)
+        setRaw(rawNumber + num)
+        setE164(E164 + num)
+        
         target.innerHTML = number;
 
     }
