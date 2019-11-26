@@ -1,0 +1,64 @@
+
+#first-row-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-bottom: 3px;
+}
+
+#second-row-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-bottom: 3px;
+}
+
+#third-row-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-bottom: 3px;
+}
+
+#phone-dock{
+    background-color:snow;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+        .phone-dock-pair {
+            display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        font-family: system, -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", "Lucida Grande";
+        
+        img {
+            position: relative;
+            top: 12px;
+        }
+        
+        p {
+            position: relative;
+            bottom: 12px;
+        }
+        }

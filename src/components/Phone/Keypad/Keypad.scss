@@ -111,26 +111,26 @@
    }
 
 
-    .phone-dock-pair {
-        display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-    align-content: stretch;
-    font-family: system, -apple-system, BlinkMacSystemFont,
-    "Helvetica Neue", "Lucida Grande";
+    // .phone-dock-pair {
+    //     display: flex;
+	// flex-direction: column;
+	// flex-wrap: nowrap;
+	// justify-content: space-between;
+	// align-items: center;
+    // align-content: stretch;
+    // font-family: system, -apple-system, BlinkMacSystemFont,
+    // "Helvetica Neue", "Lucida Grande";
 
-    img {
-        position: relative;
-        top: 12px;
-    }
+    // img {
+    //     position: relative;
+    //     top: 12px;
+    // }
 
-    p {
-        position: relative;
-        bottom: 12px;
-    }
-    }
+    // p {
+    //     position: relative;
+    //     bottom: 12px;
+    // }
+    // }
 
     .first-column {
         margin-right: 20px;
