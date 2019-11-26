@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import star from '../../../assets/iconmonstr-star-3.svg'
 import recent from '../../../assets/iconmonstr-clock-thin.svg'
@@ -14,18 +14,30 @@ export default function Keypad() {
 
     const [number, setNumber] = useState("");
 
-    function setOutgoingNumber(num) {
-        let target = document.getElementById("number-output")
+    // Catch for delay on setOutgoingNumber event.
+    // UseEffect makes sure that the component updates after every button press,
+    // to be immediately display in #number-output.
+    useEffect(() => {
+        let target =  document.getElementById("number-output")
+        target.innerHTML = number;
+    })
+    const setOutgoingNumber =  (num) => {
+        let target =  document.getElementById("number-output")
         // Set the number into the call stack.
+        
         setNumber(number + num)
         target.innerHTML = number;
-        
+
+        // Once we hit three digits, add a - symbol
+        if (number.length === 3) {
+            setNumber(number + "-")
+        }
     }
 
     return (
         <div className="Keypad">
             <div id="number">
-                <h1 id="number-output">(102)-234-3333</h1>
+                <h1 id="number-output"></h1>
             </div>
             <div id="keypad-buttons">
                 <div id="first-row">
