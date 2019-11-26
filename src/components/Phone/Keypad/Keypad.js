@@ -5,6 +5,8 @@ import recent from '../../../assets/iconmonstr-clock-thin.svg'
 import voicemail from '../../../assets/voicemail-24px.svg'
 import contact from '../../../assets/supervised_user_circle-24px.svg'
 import phoneicon from '../../../assets/iconmonstr-phone-1.svg'
+import asterisk from '../../../assets/asterisk.svg'
+import hashtag from '../../../assets/iconmonstr-hashtag-1.svg'
 import "./Keypad.scss";
 import circle from '../../../assets/iconmonstr-circle-1.svg'
 
@@ -17,7 +19,7 @@ export default function Keypad() {
                 <div id="first-row">
                     <div className="keypad-button first-column">
                         <h1>1</h1>
-                        <p> </p>
+                       <div></div>
                     </div>
                     <div className="keypad-button second-column">
                         <h1>2</h1>
@@ -57,15 +59,15 @@ export default function Keypad() {
                     </div>
                 </div>
                 <div id="fourth-row">
-                    <div className="keypad-button first-column">
-                        <h1>*</h1>
+                    <div className="keypad-button first-column" id="star">
+                        <img src={asterisk} alt="asterisk symbol" />
                     </div>
                     <div className="keypad-button second-column">
                         <h1>0</h1>
                         <p>+</p>          
                     </div>
-                    <div className="keypad-button">
-                         <h1>#</h1>       
+                    <div className="keypad-button" id="pound">
+                         <img src={hashtag} alt="hashtag" />
                     </div>
                 </div>
                 <div id="fifth-row">
