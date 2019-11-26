@@ -10,7 +10,7 @@ export default function Keypad() {
 
     const [number, setNumber] = useState("");
     const [rawNumber, setRaw] = useState("");
-    const [E164, setE164] = useState("+")
+    const [E164, setE164] = useState("+1")
 
     // Catch for delay on setOutgoingNumber event.
     // UseEffect makes sure that the component updates after every button press,
@@ -21,6 +21,7 @@ export default function Keypad() {
             setNumber(number + "-")
         }
 
+        // At 7 Digits, add in () to enclose the area code.
         if (number.length === 7) {
             let areaCode = `(${number.substring(0, 3)}) ${number.substring(4, 7)}-`
             setNumber(areaCode)
@@ -42,7 +43,7 @@ export default function Keypad() {
         setNumber(number + num)
         setRaw(rawNumber + num)
         setE164(E164 + num)
-        
+
         target.innerHTML = number;
 
     }
