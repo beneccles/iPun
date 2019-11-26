@@ -98,9 +98,13 @@
         filter: invert(100%)
     }
 
-    #star {
-  
-        }
+   #number-output {
+       position: relative;
+       top: 75px;
+       font-family: system, -apple-system, BlinkMacSystemFont,
+       "Helvetica Neue", "Lucida Grande";
+       font-size: 28px;
+   }
 
 
     .phone-dock-pair {

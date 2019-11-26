@@ -15,15 +15,17 @@ export default function Keypad() {
     const [number, setNumber] = useState("");
 
     function setOutgoingNumber(num) {
+        let target = document.getElementById("number-output")
         // Set the number into the call stack.
         setNumber(number + num)
+        target.innerHTML = number;
         
     }
 
     return (
         <div className="Keypad">
             <div id="number">
-                <h1 id="number-output"></h1>
+                <h1 id="number-output">(102)-234-3333</h1>
             </div>
             <div id="keypad-buttons">
                 <div id="first-row">
