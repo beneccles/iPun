@@ -8,6 +8,7 @@ import phoneicon from '../../../assets/iconmonstr-phone-1.svg'
 import asterisk from '../../../assets/asterisk.svg'
 import hashtag from '../../../assets/iconmonstr-hashtag-1.svg'
 import deletetag from '../../../assets/iconmonstr-x-mark-13.svg'
+import Dock from '../Dock/Dock'
 import "./Keypad.scss";
 import circle from '../../../assets/iconmonstr-circle-1.svg'
 
@@ -108,7 +109,8 @@ export default function Keypad() {
 
                 </div>
             </div>
-            <div id="phone-dock" className="keypad-dock">
+            <Dock />
+            {/* <div id="phone-dock" className="keypad-dock">
                 <Link to="/favorites" className="phoneLink phone-dock-pair">
                     <img src={star} alt="Favorites" />
                     <p>Favorites</p>
@@ -145,7 +147,7 @@ export default function Keypad() {
                     <img src={voicemail} alt="Voicemail" />
                     <p>Voicemail</p>
                 </Link>
-                </div>
+                </div> */}
         </div>
     )
 }
