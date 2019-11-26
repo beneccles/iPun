@@ -1,16 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
-import star from '../../../assets/iconmonstr-star-3.svg'
-import recent from '../../../assets/iconmonstr-clock-thin.svg'
-import voicemail from '../../../assets/voicemail-24px.svg'
-import contact from '../../../assets/supervised_user_circle-24px.svg'
 import phoneicon from '../../../assets/iconmonstr-phone-1.svg'
 import asterisk from '../../../assets/asterisk.svg'
 import hashtag from '../../../assets/iconmonstr-hashtag-1.svg'
 import deletetag from '../../../assets/iconmonstr-x-mark-13.svg'
 import Dock from '../Dock/Dock'
-import "./Keypad.scss";
-import circle from '../../../assets/iconmonstr-circle-1.svg'
+import "./Keypad.scss"
 
 export default function Keypad() {
 
@@ -24,6 +18,13 @@ export default function Keypad() {
         if (number.length === 3) {
             setNumber(number + "-")
         }
+
+        if (number.length === 7) {
+            let newNum = number;
+            
+            setNumber(number + "-")
+        }
+
         let target =  document.getElementById("number-output")
         target.innerHTML = number;
     })
@@ -104,50 +105,13 @@ export default function Keypad() {
                         <img src={phoneicon} alt="Phone Icon" />
                     </div>
                     <div id="delete">
+                        {/* Only display if there is something to delete in the number variable */}
                         {number.length > 0 ? <img src={deletetag} alt="Delete Button" /> : null}
                     </div>
 
                 </div>
             </div>
             <Dock />
-            {/* <div id="phone-dock" className="keypad-dock">
-                <Link to="/favorites" className="phoneLink phone-dock-pair">
-                    <img src={star} alt="Favorites" />
-                    <p>Favorites</p>
-                </Link>
-                <Link to="/recents" className="phoneLink phone-dock-pair">
-                    <img src={recent} alt="Recent" id="phone-recent"/>
-                    <p>Recents</p>
-                </Link>
-                <Link to="/contacts" className="phoneLink phone-dock-pair">
-                    <img src={contact} alt="Contact" />
-                    <p>Contacts</p>
-                </Link>
-                <Link to="/keypad" className="phoneLink phone-dock-pair" id="keypad-icon">
-                <div>
-                    <div id="first-row-icon">
-                        <img src={circle} alt="keypadNum"/>
-                        <img src={circle} alt="keypadNum"/>
-                        <img src={circle} alt="keypadNum"/>
-                    </div>
-                    <div id="second-row-icon">
-                        <img src={circle} alt="keypadNum"/>
-                        <img src={circle} alt="keypadNum"/>
-                        <img src={circle} alt="keypadNum"/>
-                    </div>
-                    <div id="third-row-icon">
-                        <img src={circle} alt="keypadNum"/>
-                        <img src={circle} alt="keypadNum"/>
-                        <img src={circle} alt="keypadNum"/>
-                    </div>
-            </div>
-            <p>Keypad</p>
-                </Link>
-                <Link to="/voicemail" className="phoneLink phone-dock-pair">
-                    <img src={voicemail} alt="Voicemail" />
-                    <p>Voicemail</p>
-                </Link>
-                </div> */}
         </div>
     )
 }
