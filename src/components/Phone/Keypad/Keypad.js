@@ -16,46 +16,46 @@ export default function Keypad() {
             <div id="keypad-buttons">
                 <div id="first-row">
                     <div className="keypad-button first-column">
-
+                        <h1>1</h1>
                     </div>
                     <div className="keypad-button second-column">
-                        
+                        <h1>2</h1>
                     </div>
                     <div className="keypad-button">
-                        
+                        <h1>3</h1>
                     </div>
                 </div>
                 <div id="second-row">
                     <div className="keypad-button first-column">
-                        
+                        <h1>4</h1>
                     </div>
                     <div className="keypad-button second-column">
-                        
+                        <h1>5</h1>
                     </div>
                     <div className="keypad-button">
-                        
+                        <h1>6</h1>
                     </div>
                 </div>
                 <div id="third-row">
                     <div className="keypad-button first-column">
-                        
+                        <h1>7</h1>
                     </div>
                     <div className="keypad-button second-column">
-                            
+                        <h1>8</h1>    
                     </div>
                     <div className="keypad-button">
-                            
+                         <h1>9</h1>   
                     </div>
                 </div>
                 <div id="fourth-row">
                     <div className="keypad-button first-column">
-                        
+                        <h1>*</h1>
                     </div>
                     <div className="keypad-button second-column">
-                                
+                        <h1>0</h1>          
                     </div>
                     <div className="keypad-button">
-                                
+                         <h1>#</h1>       
                     </div>
                 </div>
                 <div id="fifth-row">
