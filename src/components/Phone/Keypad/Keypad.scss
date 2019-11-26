@@ -13,7 +13,7 @@
     
     #keypad-buttons {
         width: 100%;
- 
+      
 
         #first-row {
             display: flex;
@@ -70,6 +70,18 @@
         width: 80px;
         border-radius: 50px;
         background-color: snow;
+        font-family: system, -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", "Lucida Grande";
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: stretch;
+
+        h1 {
+            font-size: 26px;
+        }
     }
 
     .phone-dock-pair {
