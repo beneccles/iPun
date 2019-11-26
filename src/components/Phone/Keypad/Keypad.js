@@ -7,6 +7,7 @@ import contact from '../../../assets/supervised_user_circle-24px.svg'
 import phoneicon from '../../../assets/iconmonstr-phone-1.svg'
 import asterisk from '../../../assets/asterisk.svg'
 import hashtag from '../../../assets/iconmonstr-hashtag-1.svg'
+import deletetag from '../../../assets/iconmonstr-x-mark-13.svg'
 import "./Keypad.scss";
 import circle from '../../../assets/iconmonstr-circle-1.svg'
 
@@ -18,6 +19,10 @@ export default function Keypad() {
     // UseEffect makes sure that the component updates after every button press,
     // to be immediately display in #number-output.
     useEffect(() => {
+        // Once we hit three digits, add a - symbol
+        if (number.length === 3) {
+            setNumber(number + "-")
+        }
         let target =  document.getElementById("number-output")
         target.innerHTML = number;
     })
@@ -28,10 +33,6 @@ export default function Keypad() {
         setNumber(number + num)
         target.innerHTML = number;
 
-        // Once we hit three digits, add a - symbol
-        if (number.length === 3) {
-            setNumber(number + "-")
-        }
     }
 
     return (
@@ -95,9 +96,16 @@ export default function Keypad() {
                     </div>
                 </div>
                 <div id="fifth-row">
+                    <div className="empty">
+
+                    </div>
                     <div className="keypad-button" id="commit-call">
                         <img src={phoneicon} alt="Phone Icon" />
                     </div>
+                    <div id="delete">
+                        {number.length > 0 ? <img src={deletetag} alt="Delete Button" /> : null}
+                    </div>
+
                 </div>
             </div>
             <div id="phone-dock" className="keypad-dock">

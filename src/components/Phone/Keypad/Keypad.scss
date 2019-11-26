@@ -12,6 +12,8 @@
     
     #keypad-buttons {
         width: 100%;
+        position: relative;
+        top: 75px;
       
 
         #first-row {
@@ -64,10 +66,6 @@
         }
     }
 
-    .keypad-button:hover{
-        filter: grayscale(100%)
-    }
-
     .keypad-button {
         height: 80px;
         width: 80px;
@@ -94,13 +92,19 @@
 
     }
 
+    .empty {
+        height: 80px;
+        width: 80px;
+        margin-right: 20px;
+    }
+
     .keypad-button:hover{
         filter: invert(100%)
     }
 
    #number-output {
        position: relative;
-       top: 75px;
+       top: 100px;
        font-family: system, -apple-system, BlinkMacSystemFont,
        "Helvetica Neue", "Lucida Grande";
        font-size: 28px;
@@ -122,6 +126,15 @@
 
     .second-column {
         margin-right: 20px;
+    }
+
+    #delete {
+        margin-left: 20px;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #first-row-icon {
@@ -161,4 +174,5 @@
         align-items: center;
         transform: rotate(-10deg);
     }
+
 }
