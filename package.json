@@ -5,12 +5,16 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "create-react-app": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "react-touch": "^0.4.4"
+    "react-touch": "^0.4.4",
+    "twilio": "^3.37.1"
   },
   "scripts": {
     "start": "react-scripts start",
