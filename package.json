@@ -2,6 +2,8 @@
   "name": "ipun",
   "version": "0.1.0",
   "private": true,
+  "main": "server/index.js",
+  "proxy": "http://localhost:9101",
   "dependencies": {
     "animate.css": "^3.7.2",
     "create-react-app": "^3.2.0",
