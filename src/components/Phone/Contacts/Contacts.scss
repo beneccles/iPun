@@ -1,5 +1,10 @@
 .Contacts {
-    height: 100%;
-    width: 100%;
+    height: 812px;
+    width: 375px;
     background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 30px;
+    border: 1px solid black;
 }
