@@ -35,7 +35,7 @@ export default function Keypad() {
             setNumber(rawNumber)
             target.innerHTML = number
         }
-    })
+    }, [number, rawNumber])
     const setOutgoingNumber =  (num) => {
         let target =  document.getElementById("number-output")
         // Set the number into the call stack.
